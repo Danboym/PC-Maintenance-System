@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    id="WebApp_ID" version="4.0">
+    
+    <display-name>PC Maintenance System</display-name>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.pcm.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+   
+    
+    <!-- Update Equipment Status Servlet -->
+    <servlet>
+        <servlet-name>UpdateEquipmentStatusServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.UpdateEquipmentStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateEquipmentStatusServlet</servlet-name>
+        <url-pattern>/updateEquipmentStatus</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Request Servlet -->
+    <servlet>
+        <servlet-name>RequestServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.RequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/request</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Assign Technician Servlet -->
+    <servlet>
+        <servlet-name>AssignTechnicianServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.AssignTechnicianServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AssignTechnicianServlet</servlet-name>
+        <url-pattern>/assignTechnician</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Update Request Status Servlet -->
+    <servlet>
+        <servlet-name>UpdateRequestStatusServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.UpdateRequestStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateRequestStatusServlet</servlet-name>
+        <url-pattern>/updateRequestStatus</url-pattern>
+    </servlet-mapping>
+    
+    <!-- PC Servlet -->
+    <servlet>
+        <servlet-name>PCServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.PCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PCServlet</servlet-name>
+        <url-pattern>/pc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateTechnicianServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.UpdateTechnicianServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateTechnicianServlet</servlet-name>
+        <url-pattern>/admin/updateTechnician</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Admin Servlet -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.pcm.controller.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteTechnicianServlet</servlet-name>
+        <servlet-class>com.pcm.servlet.DeleteTechnicianServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTechnicianServlet</servlet-name>
+        <url-pattern>/deleteTechnician</url-pattern>
+    </servlet-mapping>
+    <!-- Register Equipment Servlet -->
+<servlet>
+    <servlet-name>RegisterEquipmentServlet</servlet-name>
+    <servlet-class>com.pcm.servlet.RegisterEquipmentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RegisterEquipmentServlet</servlet-name>
+    <url-pattern>/registerEquipment</url-pattern>
+</servlet-mapping>
+
+<!-- Replace Equipment Servlet -->
+<servlet>
+    <servlet-name>ReplaceEquipmentServlet</servlet-name>
+    <servlet-class>com.pcm.servlet.ReplaceEquipmentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ReplaceEquipmentServlet</servlet-name>
+    <url-pattern>/replaceEquipment</url-pattern>
+</servlet-mapping>
+
+       
+    
+</web-app>
